@@ -2,12 +2,16 @@
 <html>
    <meta charset = "utf-8" />
    <title>WebZap Chat</title>
+<body style="background-color:rgb(14, 185, 91);">
+<img src="phonelogo.png" alt="Flowers in Chania" style="width:75px;height:75px;">
 
 <style>
 #chatbox {
-  border: 5px solid rgba(0, 255, 255, 0.808);
+  border: 5px solid rgba(4, 94, 9, 0.89);
   height: 400px;
   width: 300px;
+  background-image: url('pikachu.jpg');
+  background-size: 100% 100%;
 }
 </style>
 <script language = "javascript" type="text/javascript">
@@ -96,7 +100,7 @@
      };
     var span = document.createElement("span");
     var br = document.createElement("br");
-    span.innerHTML = `You: ${message.message}`;
+    span.innerHTML = `You: ${message.message} `;
     window.document.getElementById('chatbox').appendChild(span);
     window.document.getElementById('chatbox').appendChild(br);
     sendToSocket(message);
